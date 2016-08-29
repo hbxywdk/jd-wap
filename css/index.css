@@ -1,0 +1,324 @@
+body,
+html,
+div,
+blockquote,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+a,
+fieldset,
+input,
+th,
+td,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+body {
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+}
+.floor {
+  width: 100%;
+}
+.baseRed {
+  color: #ca1327;
+}
+img {
+  width: 100%;
+}
+@media screen and (min-width: 200px) {
+  nav a img {
+    height: 29px;
+    width: 29px;
+  }
+}
+@media screen and (min-width: 375px) {
+  nav a img {
+    height: 34px;
+    width: 34px;
+  }
+}
+@media screen and (min-width: 414px) {
+  nav a img {
+    height: 38px;
+    width: 38px;
+  }
+}
+@media screen and (min-width: 640px) {
+  nav a img {
+    height: 58px;
+    width: 58px;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 99;
+}
+header .search {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+}
+header .search .search_bg {
+  width: 100%;
+  height: 40px;
+  opacity: 0;
+  min-width: 320px;
+  max-width: 640px;
+  background: #ca1327;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header .search .logo {
+  width: 56px;
+  height: 100%;
+  background: url(../images/jd-sprites.png);
+  background-size: 200px 200px;
+  background-position: 0 -103px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+header .search .input_s {
+  width: 100%;
+  height: 40px;
+  padding: 0 50px 0 65px;
+}
+header .search .input_s input {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 10px;
+  color: #ccc;
+  margin-bottom: 5px;
+  vertical-align: text-top;
+  margin-top: 5px;
+}
+header .search .search_btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+header .search .search_btn a {
+  color: #fff;
+  font-size: 15px;
+}
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+nav {
+  width: 100%;
+  margin-bottom: 15px;
+}
+nav .line {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 10px;
+}
+nav a {
+  font-size: .6rem;
+  width: 24%;
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+nav a img {
+  /* width:56px; */
+  display: block;
+  margin: 3px auto;
+}
+.miaosha .miaosha_tit {
+  width: 100%;
+  height: 26px;
+  margin-top: 5px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.miaosha .miaosha_tit .clock {
+  width: 18px;
+  height: 22px;
+  background: url(../images/jd-sprites.png) -84px -109px no-repeat;
+  background-size: 200px 200px;
+  display: inline-block;
+  vertical-align: sub;
+}
+.miaosha .miaosha_tit .more_kill {
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  background: url(../images/jd-sprites.png) -186px -51px no-repeat;
+  background-size: 200px 200px;
+}
+.miaosha .miaosha_tit .black_area {
+  background: #3d3d3d;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0 2px;
+}
+.miaosha .miaosha_list {
+  width: 100%;
+  padding: 0 10px;
+  margin-top: .2rem;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+.miaosha .miaosha_list ul {
+  width: 49rem;
+}
+.miaosha .miaosha_list ul li {
+  float: left;
+}
+.miaosha .miaosha_list ul li a {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 .4rem;
+}
+.miaosha .miaosha_list ul li a img {
+  width: 100%;
+}
+.miaosha .miaosha_list ul li a .tejia {
+  font-size: 14px;
+}
+.miaosha .miaosha_list ul li a .yuanjia {
+  font-size: 12px;
+  color: #888888;
+  text-decoration: line-through;
+}
+.pers_50 {
+  width: 50%;
+}
+.pers_25 {
+  width: 25%;
+  float: left;
+  padding: 7px 7px 5px;
+}
+.pers_25 img {
+  margin-top: 10px;
+}
+.graphic-tit {
+  font-size: 18px;
+  line-height: 24px;
+}
+.graphic-wz {
+  font-size: 14px;
+  line-height: 15px;
+}
+.graphic-zz {
+  background: #f02b2b;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+}
+.pers_50 {
+  float: left;
+}
+.pers_50 ._50word {
+  width: 55%;
+  float: left;
+}
+.pers_50 img {
+  float: right;
+  width: 45%;
+}
+.floor_tit {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.floor_tit .bg_pic {
+  width: 100%;
+}
+.floor_tit .bigTit {
+  font-size: 25px;
+  color: #FEA258;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -39px;
+  margin-top: -15px;
+}
+.floor1,
+.floor2,
+.floor3,
+.floor4 {
+  padding: 0 10px;
+}
+.floor1:after,
+.floor2:after,
+.floor3:after,
+.floor4:after {
+  content: '.';
+  height: 0;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}

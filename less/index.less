@@ -1,0 +1,292 @@
+@baseColor: #ca1327;
+@blackArea:#3d3d3d;
+@baseHui:#888;
+@lightRed:#F02B2B;
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,li, dl, dt, dd, form, a, fieldset, input, th, td,section
+{margin: 0; padding: 0; border: 0; outline: none;box-sizing: border-box;}
+ul, ol{list-style: none;}
+a{color: black;text-decoration: none;}
+a:hover{text-decoration: underline;}
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0)}
+.fl{float: left;}
+.fr{float: right;}
+body{
+	min-width:320px;
+	max-width:640px;
+	margin: 0 auto;
+	overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background:#fff;
+    font-family:PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+}
+.floor{
+	width:100%;
+}
+
+.baseRed{
+	color:@baseColor;
+}
+img{
+	width:100%;
+}
+@media screen and (min-width: 200px){
+	nav a img{
+	    height: 29px;
+	    width: 29px;
+	}
+}
+@media screen and (min-width: 375px){
+	nav a img{
+	    height: 34px;
+	    width: 34px;
+	}
+}
+@media screen and (min-width: 414px){
+	nav a img{
+	    height: 38px;
+	    width: 38px;
+	}
+}
+@media screen and (min-width: 640px){
+	nav a img{
+	    height: 58px;
+	    width: 58px;
+	}
+}
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:40px;
+	z-index:99;
+
+	.search{
+		width:100%;
+		height:40px;
+		padding: 0 10px;
+		position:relative;
+		margin: 0 auto;
+		min-width:320px;
+		max-width:640px;
+		.search_bg{
+			width:100%;
+			height:40px;
+			opacity: 0;
+			min-width:320px;
+			max-width:640px;
+			background:@baseColor;
+			margin: 0 auto;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:-1;
+		}
+		.logo{
+			width:56px;
+			height:100%;
+			background:url(../images/jd-sprites.png);
+			background-size: 200px 200px;
+			background-position: 0 -103px;
+			position:absolute;
+			top:5px;
+			left:10px;
+		}
+		.input_s{
+			width:100%;
+			height:40px;
+		
+			padding:0 50px 0 65px;
+			input{
+				width:100%;
+				height:30px;
+				border-radius: 15px;
+				padding-left:10px;
+				color:#ccc;
+				margin-bottom: 5px;
+				vertical-align: text-top;
+				margin-top:5px;
+			}
+		}
+		.search_btn{
+			width:40px;
+			height:40px;
+			line-height:40px;
+			position:absolute;
+			top:0;
+			right:10px;
+			a{
+				color:#fff;
+				font-size:15px;
+			}
+			
+		}
+		
+
+	}
+}
+
+//banner
+.banner{
+	width:100%;
+	img{
+		width:100%;
+	}
+}
+nav{
+	width:100%;
+	margin-bottom:15px;
+	.line{
+	  display: -webkit-flex;
+	  display: flex;
+	  padding-top:10px;
+	}
+	a{
+		font-size:.6rem;
+		width:24%;
+		-webkit-flex:1;
+		flex:1;
+		text-align:center;
+		img{
+			/* width:56px; */
+			display:block;
+			margin:3px auto;
+		}
+	}
+}
+
+//掌上秒杀
+.miaosha{
+	.miaosha_tit{
+		width:100%;
+		height:26px;
+		margin-top:5px;
+		padding:0 10px;
+		font-size: 12px;
+		.clock{
+		    width: 18px;
+		    height: 22px;
+		    background: url(../images/jd-sprites.png) -84px -109px no-repeat;
+		    background-size: 200px 200px;
+		    display:inline-block;
+			vertical-align:sub;
+		}
+		.more_kill{
+		    display: inline-block;
+		    width: 7px;
+		    height: 12px;
+		    background: url(../images/jd-sprites.png) -186px -51px no-repeat;
+		    background-size: 200px 200px;
+		}
+		.black_area{
+			background:@blackArea;
+			border-radius:3px;
+			color:#fff;
+			padding: 0 2px;
+		}
+	}
+	.miaosha_list{
+		width:100%;
+		padding: 0 10px;
+		margin-top:.2rem;
+		overflow-x:scroll;
+		-webkit-overflow-scrolling: touch;//快速回弹滚动
+		overflow-scrolling: touch;
+		ul{
+			width:49rem;
+			li{
+				float:left;
+				a{
+					width:4rem;
+					height:4rem;
+					display:inline-block;
+					text-align:center;
+					text-decoration:none;
+					margin:0 .4rem;
+
+					img{
+						width:100%;
+					}
+					.tejia{
+						font-size:14px;
+					}
+					.yuanjia{
+						font-size:12px;
+						color:@baseHui;
+						text-decoration: line-through;
+					}
+
+				}
+			}
+		}
+	}
+}
+.pers_50{
+	width:50%;
+}
+.pers_25{
+	width:25%;
+	float:left;
+	padding: 7px 7px 5px;
+	img{
+		margin-top:10px;
+	}
+}
+.graphic-tit{
+	font-size: 18px;
+	line-height: 24px;
+}
+.graphic-wz{
+    
+    font-size: 14px;
+    line-height: 15px;
+}
+.graphic-zz{
+	background:@lightRed;
+	color:#fff;
+	display:inline-block;
+	font-size:12px;
+	line-height:15px;
+}
+//50%宽
+.pers_50{
+	float:left;
+	._50word{
+		width:55%;
+		float:left;
+	}
+	img{
+		float:right;
+		width:45%;
+	}
+}
+//标题
+.floor_tit{
+	width:100%;
+	position:relative;
+	text-align:center;
+	.bg_pic{
+		width:100%;
+	}
+	.bigTit{
+		font-size:25px;
+		color:#FEA258;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-39px;
+		margin-top:-15px;
+	}
+}
+.floor1,.floor2,.floor3,.floor4{
+	padding: 0 10px;
+	&:after{
+		content:'.';
+		height:0;
+		overflow:hidden;
+		display:block;
+		clear:both;
+	}
+}
+

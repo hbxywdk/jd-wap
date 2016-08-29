@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>jd</title>
+	<script>
+		(function (doc, win) {
+		  var docEl = doc.documentElement,
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		    recalc = function () {
+		      var clientWidth = docEl.clientWidth;
+		      if(clientWidth>=640) clientWidth=640;
+		      if (!clientWidth) return;
+		      docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+		    };
+		 
+		  if (!doc.addEventListener) return;
+		  win.addEventListener(resizeEvt, recalc, false);
+		  doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+	<link rel="stylesheet" href="./css/index.css"> 
+</head>
+<body>
+	<header>
+
+		<div class="search">
+			<div class="search_bg"></div>
+			<div class="logo">
+
+			</div>
+			<div class="input_s">
+				<input type="text" placeholder="搜索" class="search_inp">
+			</div>
+			<div class="search_btn">
+				<a href="">搜索</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="banner">
+		<img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t3211/318/833680817/75979/b9988121/57bfe9eeN41d39f8e.jpg!q70.jpg" alt="">
+	</section>
+
+	<nav>
+		<div class="line">
+			<a href="">
+				<span>
+					<img src="./images/nav1.png" alt="">
+					<span>京东超市</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav2.png" alt="">
+					<span>全球购</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav3.png" alt="">
+					<span>服装城</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav4.png" alt="">
+					<span>京东生鲜</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav5.png" alt="">
+					<span>京东到家</span>
+				</span>
+			</a>
+		</div>
+		<div class="line">
+			<a href="">
+				<span>
+					<img src="./images/nav6.png" alt="">
+					<span>充值中心</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav7.png" alt="">
+					<span>理财</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav8.png" alt="">
+					<span>领券中心</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav9.png" alt="">
+					<span>物流查询</span>
+				</span>
+			</a>
+			<a href="">
+				<span>
+					<img src="./images/nav10.png" alt="">
+					<span>我的关注</span>
+				</span>
+			</a>
+		</div>
+
+	</nav>
+
+	<section class="floor miaosha">
+		<div class="miaosha_tit">
+			<i class="clock"></i>
+			<span class="baseRed">掌上秒杀</span>
+			<span class="black_area">01</span>
+			<span class="baseRed">:</span>
+			<span class="black_area">30</span>
+			<span class="baseRed">:</span>
+			<span class="black_area">59</span>
+			<span class="fr">
+				<span>更多秒杀</span>
+				<i class="more_kill"></i>
+			</span>
+		</div>
+		<div class="miaosha_list">
+			<ul class="miaoshao_ul">
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+				<li class="miaosha_li">
+					<a href="">
+						<img src="./images/miaosha1.jpg" alt="">
+						<p class="baseRed tejia">￥56</p>
+						<p class="yuanjia">￥69</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="floor floor1">
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">排行榜</strong>
+				<p class="graphic-wz">静听天籁律动</p>
+			</div>
+			<img src="./images/floor1_1.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">排行榜</strong>
+				<p class="graphic-wz">静听天籁律动</p>
+				<p class="graphic-zz">板鞋福利</p>
+			</div>
+			<img src="./images/floor1_2.jpg" alt="">
+		</div>
+
+	</section>
+	<div class="floor_tit">
+		<img src="./images/love_life.png" alt="" class="bg_pic">
+	</div>
+	<section class="floor floor2">
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">玩3C</strong>
+				<p class="graphic-wz">Z11放量抢</p>
+			</div>
+			<img src="./images/floor2_1.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">京东家电</strong>
+				<p class="graphic-wz">彩电节预售</p>
+				<p class="graphic-zz">家电家装节</p>
+			</div>
+			<img src="./images/floor2_2.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">京东超市</strong>
+				<p class="graphic-wz">个护清洁趴</p>
+				<p class="graphic-zz">每满199-100</p>
+			</div>
+			<img src="./images/floor2_3.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">玩3C</strong>
+				<p class="graphic-wz">Z11放量抢</p>
+			</div>
+			<img src="./images/floor2_4.jpg" alt="">
+		</div>
+		<div class="pers_25" style="padding-left:0;">
+			<strong class="graphic-tit">爱宝宝</strong>
+			<p class="graphic-wz">开学季直降</p>
+			<img src="./images/floor2_5.jpg" alt="">
+		</div>
+		<div class="pers_25">
+			<strong class="graphic-tit">爱美丽</strong>
+			<p class="graphic-wz">限量新品</p>
+			<img src="./images/floor2_6.jpg" alt="">
+		</div>
+		<div class="pers_25">
+			<strong class="graphic-tit">爱吃</strong>
+			<p class="graphic-wz">满99减10</p>
+			<img src="./images/floor2_7.jpg" alt="">
+		</div>
+		<div class="pers_25" style="padding-right:0;">
+			<strong class="graphic-tit">爱逛</strong>
+			<p class="graphic-wz">新装39起</p>
+			<img src="./images/floor2_8.jpg" alt="">
+		</div>
+		<a href=""><img src="./images/57bfa83aN4bdd4a33.jpg" alt=""></a>
+	</section>
+	
+	<div class="floor_tit">
+		<img src="./images/have_q.png" alt="" class="bg_pic">
+	</div>
+	<section class="floor floor3">
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">玩3C</strong>
+				<p class="graphic-wz">Z11放量抢</p>
+			</div>
+			<img src="./images/floor2_1.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">京东家电</strong>
+				<p class="graphic-wz">彩电节预售</p>
+				<p class="graphic-zz">家电家装节</p>
+			</div>
+			<img src="./images/floor2_2.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">京东超市</strong>
+				<p class="graphic-wz">个护清洁趴</p>
+				<p class="graphic-zz">每满199-100</p>
+			</div>
+			<img src="./images/floor2_3.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">玩3C</strong>
+				<p class="graphic-wz">Z11放量抢</p>
+			</div>
+			<img src="./images/floor2_4.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">京东超市</strong>
+				<p class="graphic-wz">个护清洁趴</p>
+				<p class="graphic-zz">每满199-100</p>
+			</div>
+			<img src="./images/floor2_3.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">玩3C</strong>
+				<p class="graphic-wz">Z11放量抢</p>
+			</div>
+			<img src="./images/floor2_4.jpg" alt="">
+		</div>
+		<a href=""><img src="./images/57bffa2dN685011c9.jpg!q70.jpg" alt=""></a>
+	</section>
+	<div class="floor_tit">
+		<img src="./images/mall.png" alt="" class="bg_pic">
+	</div>
+	<section class="floor floor4">
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">玩3C</strong>
+				<p class="graphic-wz">Z11放量抢</p>
+			</div>
+			<img src="./images/floor2_1.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">京东家电</strong>
+				<p class="graphic-wz">彩电节预售</p>
+				<p class="graphic-zz">家电家装节</p>
+			</div>
+			<img src="./images/floor2_2.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">京东超市</strong>
+				<p class="graphic-wz">个护清洁趴</p>
+				<p class="graphic-zz">每满199-100</p>
+			</div>
+			<img src="./images/floor2_3.jpg" alt="">
+		</div>
+		<div class="pers_50">
+			<div class="_50word">
+				<strong class="graphic-tit">玩3C</strong>
+				<p class="graphic-wz">Z11放量抢</p>
+			</div>
+			<img src="./images/floor2_4.jpg" alt="">
+		</div>
+		<div class="pers_25" style="padding-left:0;">
+			<strong class="graphic-tit">爱宝宝</strong>
+			<p class="graphic-wz">开学季直降</p>
+			<img src="./images/floor2_5.jpg" alt="">
+		</div>
+		<div class="pers_25">
+			<strong class="graphic-tit">爱美丽</strong>
+			<p class="graphic-wz">限量新品</p>
+			<img src="./images/floor2_6.jpg" alt="">
+		</div>
+		<div class="pers_25">
+			<strong class="graphic-tit">爱吃</strong>
+			<p class="graphic-wz">满99减10</p>
+			<img src="./images/floor2_7.jpg" alt="">
+		</div>
+		<div class="pers_25" style="padding-right:0;">
+			<strong class="graphic-tit">爱逛</strong>
+			<p class="graphic-wz">新装39起</p>
+			<img src="./images/floor2_8.jpg" alt="">
+		</div>
+		<div class="pers_25" style="padding-left:0;">
+			<strong class="graphic-tit">爱宝宝</strong>
+			<p class="graphic-wz">开学季直降</p>
+			<img src="./images/floor2_5.jpg" alt="">
+		</div>
+		<div class="pers_25">
+			<strong class="graphic-tit">爱美丽</strong>
+			<p class="graphic-wz">限量新品</p>
+			<img src="./images/floor2_6.jpg" alt="">
+		</div>
+		<div class="pers_25">
+			<strong class="graphic-tit">爱吃</strong>
+			<p class="graphic-wz">满99减10</p>
+			<img src="./images/floor2_7.jpg" alt="">
+		</div>
+		<div class="pers_25" style="padding-right:0;">
+			<strong class="graphic-tit">爱逛</strong>
+			<p class="graphic-wz">新装39起</p>
+			<img src="./images/floor2_8.jpg" alt="">
+		</div>
+		<a href=""><img src="./images/suibao.jpg" alt=""></a>
+	</section>
+
+</body>
+	<script src="./js/jquery.js"></script>
+	<script src="js/index.js"></script>
+</html>
